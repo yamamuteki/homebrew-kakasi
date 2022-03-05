@@ -16,6 +16,7 @@ class Kakasi < Formula
 
   def install
     system "./configure", "--disable-dependency-tracking",
+                          "--disable-utf8",
                           "--prefix=#{prefix}"
     system "make", "install"
   end
